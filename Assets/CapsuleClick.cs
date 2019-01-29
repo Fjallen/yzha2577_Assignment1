@@ -22,7 +22,7 @@ public class CapsuleClick : MonoBehaviour
             {
                 if (hit.transform.name == "TheCapsule"){
                     Debug.Log("Capsule is clicked by mouse");
-                    gameObject.transform.position = new Vector3(0, 2f, 0);
+                    gameObject.transform.position = new Vector3(-1, 4f, 0);
                 }
             }
         }

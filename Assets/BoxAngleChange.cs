@@ -22,7 +22,7 @@ public class BoxAngleChange : MonoBehaviour
                 if (hit.transform.name == "TheBox" || hit.transform.name == "Side1" || hit.transform.name == "Side2" || hit.transform.name =="Side3" || hit.transform.name =="Side4")
                 {
                     Debug.Log("Box is Hit by Mouse");
-                    gameObject.transform.Rotate(10f, 5f, 10f);
+                    gameObject.transform.Rotate(-30f, 5f, 10f);
                 }
             }
         }

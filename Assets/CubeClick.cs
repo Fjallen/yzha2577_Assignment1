@@ -7,7 +7,7 @@ public class CubeClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,10 +17,13 @@ public class CubeClick : MonoBehaviour
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit)){
-                if (hit.transform.name == "TheCube"){
-                    Debug.Log("Cube is clicked by mouse");
-                    gameObject.transform.position = new Vector3(0, 2f, 0);
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.transform.name == "TheCube")
+                {
+                    Debug.Log("Capsule is clicked by mouse");
+                    gameObject.transform.position = new Vector3(1, 3f, 0);
                 }
             }
         }
